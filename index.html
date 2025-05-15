@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@tuanasepalmiba</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <audio autoplay loop>
+                    <source src="ml.mp3" type="audio/mp3">
+     </audio>
+</head>
+
+
+<!-- Popup Deskripsi Dinamis -->
+<div class="popup-overlay" id="popup-overlay">
+  <div class="popup-content">
+    <p><strong id="popup-title">Judul</strong><br>
+    <span id="popup-description">Deskripsi akan muncul di sini.</span></p>
+    <button onclick="closePopup()">Tutup</button>
+  </div>
+</div>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="head-left">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="head-right">
+                <p><a href="https://docs.google.com/document/d/1UXn9wJ5aK5-ZDKeIx0MusrWpYFhAz8SsV3rtzfB63mU/edit?usp=sharing">MISSION</a></p>
+                <p><a href="https://youtu.be/8Okt8pGlyoE?feature=shared">KNOWLEDGE</a></p>
+                <p><a href="">REVIEW</a></p>
+                <p><a href="">INTERVIEW</a></p>
+            </div>
+        </header>
+
+        <section class="hero-section autoBlur">
+            <div class="hero-vid">
+                <video loop autoplay muted plays-inline class="hero-video">
+                    <source src="videos/hero-1.mp4" type="video/mp4">
+                </video>
+
+                <div class="hero-info">
+                    <h1>PROUDLY</h1>
+                    <p>Hi, I'm Deizrantio, a backend developer focused on building reliable and</p>
+                    <p>efficient server-side applications. Welcome to my site!</p>
+                </div>
+
+                <h1 class="gaming-text">PRESENT</h1>
+                <div class="next-btn">
+                    NEXT
+                    </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <p>I'm Happy You're Here</p>
+            <h1>DISCOVER THE WORLD'S LARGEST SHARED ADVANTURE</h1>
+        <img class="stones-img" src="img/stones.png" alt="stones-img">
+            <div class="image-box autoTakeFull">
+                <img src="img/about.webp" alt="about-img">
+            </div>
+            <h4>Every Scar Tells A Story</h4>
+            <h5>Since childhood, I have loved computers... Until I...Become a</h5>
+            <h1>BACK-END Developer</h1>
+        </section>
+
+        <section class="info-section">
+            <h3>Best Awards Of Me</h3>
+            <p>Hahaha, have you ever heard the saying "If you're already in the water, don't expect to come home dry?"</p>
+            <div class="info-cards">
+                <div class="card autoDisplay">
+                   <h1>FIKSI CHAMPION 2022</h1>
+                    <video src="videos/feature-1.mp4" autoplay loop muted plays-inline></video>
+              <button onclick="showPopup('FIKSI COMPETITION', 'The fiction competition in the context of the Indonesian Student Innovation and Entrepreneurship Festival (FIKSI) refers to a competition that challenges participants to create innovative and entrepreneurial works that can compete globally. FIKSI is a talent event in the vocational field organized by the Ministry of Education, Culture, Research, and Technology for SMA/MA and SMK students. Won #2 at the provincial level of the Special Region of Yogyakarta and advanced to the national final')">OBTAINED</button>
+                    </div>
+
+             <div class="card autoDisplay">
+                   <h1>CEH CERTIFICATION ON GOING</h1> 
+                    <video src="videos/feature-2.mp4" autoplay loop muted plays-inline></video>
+              <button onclick="showPopup('CERTIFIED ECHTICAL HACKING', 'CEH, short for Certified Ethical Hacker, is a globally recognized certification in cybersecurity awarded by the EC-Council. This certification demonstrates that the holder has the knowledge and skills to identify security vulnerabilities in computer systems and networks, in an ethical and legal manner.')">OBTAINED</button>
+                    </div>
+            <div class="card autoDisplay">
+                   <h1>JUNIOR IT</h1> 
+                    <video src="videos/feature-3.mp4" autoplay loop muted plays-inline></video>
+           <button onclick="showPopup('JUNIOR IT', 'Awarded by the National Professional Certification Agency for conducting a series of trials on Web Servers, Networks and other network system analysis in 2023.')">OBTAINED</button>
+                    </div>
+            <div class="card autoDisplay">
+                    <h1>Best Mentor</h1>
+                    <video src="videos/feature-4.mp4" autoplay loop muted plays-inline></video>
+            <button onclick="showPopup('MENTOR MLBB', 'Given by the MLBB community game, as an appreciation for mentoring by playing together during the event period.')">OBTAINED</button>
+                    </div>
+            <div class="card autoDisplay">
+                    <video src="videos/hero-4.mp4" autoplay loop muted plays-inline></video>
+                    </div>
+            <div class="card autoDisplay">
+                    <h1>More Coming SOON :3</h1>
+            </div>
+            </div>
+        </section>
+        
+         <section class="skills-section">
+            <div class="skills-box autoDisplay">
+                <img src="img/char1.png" alt="skills-image" class="skills-image">
+            
+            <div class="designer autoDisplay">
+                <h1 class="gradien-student">LOVE LANGUAGE<i class=''></i></i></h1>
+            </div>
+
+            <div class="coder autoDisplay">
+              <h1 class="gradien">LOVE LANGUAGE<i class=''></i></i></h1>
+            </div>
+            </div>
+            <div class="slider autoDisplay" reverse="true" style="
+                    --width: 100px;
+                    --height: 100px;
+                    --quantity: 9;
+            ">
+                <div class="list">
+                    <div class="item" style="--position: 1"><img src="images/1.png" alt="slider-image"></div>
+                    <div class="item" style="--position: 2"><img src="images/2.png" alt="slider-image"></div>
+                    <div class="item" style="--position: 3"><img src="images/3.png" alt="slider-image"></div>
+                    <div class="item" style="--position: 4"><img src="images/4.png" alt="slider-image"></div>
+                    <div class="item" style="--position: 5"><img src="images/5.png" alt="slider-image"></div>
+                    <div class="item" style="--position: 6"><img src="images/6.png" alt="slider-image"></div>
+                    <div class="item" style="--position: 7"><img src="images/7.png" alt="slider-image"></div>
+                    <div class="item" style="--position: 8"><img src="images/8.png" alt="slider-image"></div>
+                    <div class="item" style="--position: 9"><img src="images/10.png" alt="slider-image"></div>
+                </div>
+        </div>
+
+       
+    <section class="thankyou-section">
+  <div class="thankyou-content">
+    <h1>THANK YOU</h1>
+    <section class="closing-romance">
+  <p>If you were a line of code, you'd be the one that keeps my heart from crashing.</p>
+</section>
+
+   <section class="footer">
+            <p>Deizrantio</p>
+            <ul>
+              <li><a href="https://youtube.com/@fadeham?si=bwyc_sj87rw4pcTk"><i class='bx bxl-youtube'></i></a></li>
+              <li><a href="https://www.instagram.com/tuanasepalmiba_?igsh=MXI1Y3A0cmU4cHE2dw=="><i class='bx bxl-instagram'></i></a></li>
+              <li><a href="#"><i class='bx bxl-github'></i></a></li>
+              <li><a href="mailto:zalfadeizrantio.2024@student.uny.ac.id"><i class='bx bxl-gmail'></i></a></li>
+            </ul>
+            <p>Privacy Policy</p>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
